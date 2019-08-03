@@ -5,15 +5,15 @@
     <title>Интернет-магазин "Мишка" - Каталог</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header  page-header--index">
       <div class="wrapper">
         <nav class="page-header__navigation-main  navigation-main">
-          <a class="page-header__logo  logo">
+          <a class="page-header__logo  logo" href="index.html">
             <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
           </a>
           <button class="navigation-main__toggle" type="button">Переключение видимости меню</button>
           <ul class="navigation-main__site-menu  site-menu">
-            <li class="site-menu__item"><a class="site-menu__link" href="catalog.html">Каталог товаров</a></li>
+            <li class="site-menu__item"><a class="site-menu__link">Каталог товаров</a></li>
             <li class="site-menu__item"><a class="site-menu__link" href="form.html">Вязание на заказ</a></li>
           </ul>
           <ul class="navigation-main__user-menu  user-menu">
@@ -26,40 +26,55 @@
           </ul>
           <p class="navigation-mein__delivery-text">Бесплатная доставка по России</p>
         </nav>
-        <h1 class="page-header__title">Каталог товаров"</h1>
+        <h1 class="page-header__title">Каталог товаров</h1>
       </div>
       <div class="page-header__decor-line"></div>
     </header>
     <main class="main  wrapper">
       <article class="main__catalog  catalog">
         <article class="catalog__item  item-card">
-          <img class="item-card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Вязаный зайчик">
+          <a class="item-card__link" href="catalog/rabbit.html">
+            <img class="item-card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Вязаный зайчик">
+          </a>
           <section class="item-card__description">
             <div class="item-card__label">
-              <p class="item-card__name">Зайчик-попрыгайчик</p>
+              <a class="item-card__link  item-card__link--name" href="catalog/rabbit.html">Зайчик-попрыгайчик</a>
               <p class="item-card__characteristics">Рост 30 см, вес 200 г</p>
             </div>
-            <p class="item-card__price">1 200 руб.</p>
+            <div class="item-card__order">
+              <p class="item-card__price">1 200 руб.</p>
+              <button class="item-card__btn" type="button">Заказать</button>
+            </div>
           </section>
         </article>
         <article class="catalog__item  item-card">
-          <img class="item-card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Вязаная корзина с бельем">
+          <a class="item-card__link" href="catalog/basket.html">
+            <img class="item-card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Вязаная корзина с бельем">
+          </a>
           <section class="item-card__description">
             <div class="item-card__label">
-              <p class="item-card__name">Корзинка для белья</p>
+              <a class="item-card__link  item-card__link--name" href="catalog/basket.html">Корзинка для белья</a>
               <p class="item-card__characteristics">Диаметр 15 см, высота 10 см</p>
             </div>
-            <p class="item-card__price">690 руб.</p>
+            <div class="item-card__order">
+              <p class="item-card__price">690 руб.</p>
+              <button class="item-card__btn" type="button">Заказать</button>
+            </div>
           </section>
         </article>
         <article class="catalog__item  item-card">
-          <img class="item-card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Вязаная корзина с мягкими игрушками">
+          <a class="item-card__link" href="catalog/toybasket.html">
+            <img class="item-card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Вязаная корзина с мягкими игрушками">
+          </a>
           <section class="item-card__description">
             <div class="item-card__label">
-              <p class="item-card__name">Большая корзинка для игрушек</p>
+                <a class="item-card__link  item-card__link--name" href="catalog/rabbit.html">Большая корзинка для игрушек</a>
               <p class="item-card__characteristics">Диаметр 30 см, высота 30 см</p>
             </div>
-            <p class="item-card__price">1 500 руб.</p>
+            <div class="item-card__order">
+              <p class="item-card__price">1 500 руб.</p>
+              <button class="item-card__btn" type="button">Заказать</button>
+            </div>
           </section>
         </article>
       </article>
@@ -72,7 +87,7 @@
       </article>
     </main>
     <footer class="page-footer  wrapper">
-      <a class="page-footer__logo  logo">
+      <a class="page-footer__logo  logo" href="index.html">
         <img class="logo__image" src="http://placehold.it/102x34" width="102" height="34" alt="Логотип магазина Мишка">
       </a>
       <section class="page-footer__social  social">
@@ -96,5 +111,30 @@
         </a>
       </section>
     </footer>
+    <form class="popup" action="https://echo.htmlacademy.ru" method="POST">
+      <p class="popup__title">Добавить в корзину</p>
+      <fieldset class="popup__size-list">
+        <p class="popup__text">Выберите размер:</p>
+        <p>
+          <label>
+            <input class="popup__input-radio  visually-hidden" type="radio" value="S" name="size" checked>
+            <span class="popup__size">S</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input class="popup__input-radio  visually-hidden" type="radio" value="M" name="size">
+            <span class="popup__size">M</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input class="popup__input-radio  visually-hidden" type="radio" value="L" name="size">
+            <span class="popup__size">L</span>
+          </label>
+        </p>
+      </fieldset>
+      <button class="popup__btn  button  button--popup" type="submit">Добавить</button>
+    </form>
   </body>
 </html>

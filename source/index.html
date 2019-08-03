@@ -53,7 +53,7 @@
           </dl>
           <img class="week-product__image" src="http://placehold.it/260x315" width="260" height="315" alt="Сет из трех вязаных корзинок в руках">
           <p class="week-product__price">Цена: 990 руб.</p>
-          <a class="week-product__btn  button" href="#">Заказать</a>
+          <button class="week-product__btn  button" type="button">Заказать</button>
         </section>
       </article>
       <div class="main__decor-separator"></div>
@@ -79,7 +79,7 @@
           <button class="reviews-list__arrow  reviews-list__arrow--left" type="button"></button>
           <button class="reviews-list__arrow  reviews-list__arrow--right" type="button"></button>
         </div>
-        <a class="reviews-list__btn  button" href="#">Написать</a>
+        <a class="reviews-list__btn  button" href="reviews.html">Написать</a>
       </article>
       <div class="main__decor-separator"></div>
       <article class="main__contacts  contacts">
@@ -91,7 +91,7 @@
             <dt>адрес</dt>
               <dd>г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</dd>
           </dl>
-          <a class="contacts__btn  button" href="#">Напишите нам</a>
+          <a class="contacts__btn  button" href="feedback.html">Напишите нам</a>
         </section>
         <img class="contacts__map" src="http://placehold.it/322x457" width="322" height="457" alt="Адрес компании по адресу: г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101">
       </article>
@@ -121,5 +121,30 @@
         </a>
       </section>
     </footer>
+    <form class="popup" action="https://echo.htmlacademy.ru" method="POST">
+      <p class="popup__title">Добавить в корзину</p>
+      <fieldset class="popup__size-list">
+        <p class="popup__text">Выберите размер:</p>
+        <p>
+          <label>
+            <input class="popup__input-radio  visually-hidden" type="radio" value="S" name="size" checked>
+            <span class="popup__size">S</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input class="popup__input-radio  visually-hidden" type="radio" value="M" name="size">
+            <span class="popup__size">M</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input class="popup__input-radio  visually-hidden" type="radio" value="L" name="size">
+            <span class="popup__size">L</span>
+          </label>
+        </p>
+      </fieldset>
+      <button class="popup__btn  button  button--popup" type="submit">Добавить</button>
+    </form>
   </body>
 </html>
