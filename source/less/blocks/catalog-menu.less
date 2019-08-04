@@ -1,7 +1,15 @@
 .catalog-menu__item {
+  font-size: 19px;
+  color: @color-main;
+
   background-color: @color-vibrant;
 
   &--another {
     background-color: @color-vibrant--dark;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
