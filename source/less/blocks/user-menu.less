@@ -1,12 +1,48 @@
 .user-menu {
-  padding: 0;
+  width: 100%;
   margin: 0;
+  padding-left: 17px;
 
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    padding-left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
-.user-menu__link--search {
+.user-menu__item {
+  padding: 28px;
+
+  text-align: left;
+
   @media (min-width: @tablet-width) {
-    font-size: 0;
+    padding: 0;
+
+    text-align: right;
+  }
+
+  &--search {
+    padding: 28px;
+
+    text-align: left;
+
+    @media (min-width: @tablet-width) {
+      width: 84px;
+      padding: 0;
+
+      font-size: 0;
+    }
   }
 }
