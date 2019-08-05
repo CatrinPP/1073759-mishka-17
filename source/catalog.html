@@ -12,7 +12,7 @@
       <nav class="page-header__navigation-main  navigation-main  wrapper">
         <div class="navigation-main__header">
           <a class="navigation-main__logo  logo" href="index.html">
-            <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+            <img class="logo__image  logo__image--decorated" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
           </a>
           <button class="navigation-main__toggle" type="button">Переключение видимости меню</button>
         </div>
@@ -36,8 +36,8 @@
       <div class="page-header__decor-line"></div>
     </header>
     <main class="main  wrapper">
-      <article class="main__catalog  catalog">
-        <article class="catalog__item  item-card">
+      <article class="main__shop  shop">
+        <article class="shop__item  item-card">
           <a class="item-card__link" href="catalog/hare.html">
             <img class="item-card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Вязаный зайчик">
           </a>
@@ -52,7 +52,7 @@
             </div>
           </section>
         </article>
-        <article class="catalog__item  item-card">
+        <article class="shop__item  item-card">
           <a class="item-card__link" href="catalog/basket.html">
             <img class="item-card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Вязаная корзина с бельем">
           </a>
@@ -67,7 +67,7 @@
             </div>
           </section>
         </article>
-        <article class="catalog__item  item-card">
+        <article class="shop__item  item-card">
           <a class="item-card__link" href="catalog/toybasket.html">
             <img class="item-card__image" src="http://placehold.it/260x195" width="260" height="195" alt="Вязаная корзина с мягкими игрушками">
           </a>
@@ -84,62 +84,59 @@
         </article>
       </article>
       <article class="main__video-card  video-card">
+        <!-- <h2 class="video-card__title">Процесс производства</h2> -->
+        <div class="video-card__visual">
+          <img class="video-card__image" src="http://placehold.it/260x150" width="260" height="150" alt="Зелено-серая вязаная корзина">
+          <img class="video-card__icon" src="http://placehold.it/101x77" width="101" height="77" alt="Зеленая иконка для начала просмотра видео">
+        </div>
         <h2 class="video-card__title">Процесс производства</h2>
-        <img class="video-card__image" src="http://placehold.it/260x150" width="260" height="150" alt="Зелено-серая вязаная корзина">
-        <img class="video-card__icon" src="http://placehold.it/101x77" width="101" height="77" alt="Зеленая иконка для начала просмотра видео">
-        <p class="video-card__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="video-card__btn  button">Сделать заказ</a>
+        <div class="video-card__description">
+          <p class="video-card__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="video-card__btn  button">Сделать заказ</a>
+        </div>
       </article>
     </main>
-    <footer class="page-footer">
-      <div class="wrapper">
-        <a class="page-footer__logo  logo" href="index.html">
-          <img class="logo__image" src="http://placehold.it/102x34" width="102" height="34" alt="Логотип магазина Мишка">
+    <footer class="page-footer  wrapper">
+      <a class="page-footer__logo  logo" href="index.html">
+        <img class="logo__image" src="http://placehold.it/102x34" width="102" height="34" alt="Логотип магазина Мишка">
+      </a>
+      <section class="page-footer__social  social">
+        <a class="social__link" href="#">
+          <img class="social__logo" src="http://placehold.it/30x30" width="30" height="30" alt="Логотип Фейсбук">
+          Магазин Мишка на Фейсбуке
         </a>
-        <section class="page-footer__social  social">
-          <a class="social__link" href="#">
-            <img class="social__logo" src="http://placehold.it/30x30" width="30" height="30" alt="Логотип Фейсбук">
-            Магазин Мишка на Фейсбуке
-          </a>
-          <a class="social__link" href="#">
-            <img class="social__logo" src="http://placehold.it/30x30" width="30" height="30" alt="Логотип Вконтакте">
-            Магазин Мишка во Вконтакте
-          </a>
-          <a class="social__link" href="#">
-            <img class="social__logo" src="http://placehold.it/30x30" width="30" height="30" alt="Логотип Инстаграм">
-            Магазин Мишка в Инстаграме
-          </a>
-        </section>
-        <section class="page-footer__copyright  copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__img" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy">
-          </a>
-        </section>
-      </div>
+        <a class="social__link" href="#">
+          <img class="social__logo" src="http://placehold.it/30x30" width="30" height="30" alt="Логотип Вконтакте">
+          Магазин Мишка во Вконтакте
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__logo" src="http://placehold.it/30x30" width="30" height="30" alt="Логотип Инстаграм">
+          Магазин Мишка в Инстаграме
+        </a>
+      </section>
+      <section class="page-footer__copyright  copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__img" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </section>
     </footer>
     <form class="popup" action="https://echo.htmlacademy.ru" method="POST">
       <p class="popup__title">Добавить в корзину</p>
       <fieldset class="popup__size-list">
         <p class="popup__text">Выберите размер:</p>
-        <p>
-          <label>
-            <input class="popup__input-radio  visually-hidden" type="radio" value="S" name="size" checked>
-            <span class="popup__size">S</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input class="popup__input-radio  visually-hidden" type="radio" value="M" name="size">
-            <span class="popup__size">M</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input class="popup__input-radio  visually-hidden" type="radio" value="L" name="size">
-            <span class="popup__size">L</span>
-          </label>
-        </p>
+        <label>
+          <input class="popup__input-radio  visually-hidden" type="radio" value="S" name="size" checked>
+          <span class="popup__size">S</span>
+        </label>
+        <label>
+          <input class="popup__input-radio  visually-hidden" type="radio" value="M" name="size">
+          <span class="popup__size">M</span>
+        </label>
+        <label>
+          <input class="popup__input-radio  visually-hidden" type="radio" value="L" name="size">
+          <span class="popup__size">L</span>
+        </label>
       </fieldset>
       <button class="popup__btn  button  button--popup" type="submit">Добавить</button>
     </form>

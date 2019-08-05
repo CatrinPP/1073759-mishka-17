@@ -1,4 +1,14 @@
+.popup {
+  display: none;
+  width: 320px;
+  padding: 36px 30px 46px;
+  text-align: center;
+}
+
 .popup__title {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
@@ -10,6 +20,9 @@
 }
 
 .popup__text {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -21,10 +34,20 @@
 }
 
 .popup__size {
+  margin: 0;
+
   line-height: 16px;
   color: @color-font--secondary;
 
   @media (min-width: @desktop-width) {
     line-height: 30px;
   }
+}
+
+.popup__size-list {
+  margin-bottom: 30px;
+}
+
+.popup__btn {
+  width: 100%;
 }

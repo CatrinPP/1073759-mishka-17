@@ -1,8 +1,30 @@
 .page-header__background {
+  padding: 70px 30px;
+
+  text-align: center;
+
   background-color: @color-secondary;
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: cover;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -60px;
+    padding: 95px;
+  }
+
+  .page-header--index & {
+    padding: 70px 38px 120px;
+
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/hero-tablet@1x.jpg");
+    }
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/hero-desktop@1x.jpg");
+    }
+  }
 }
 
 .page-header__slogan {

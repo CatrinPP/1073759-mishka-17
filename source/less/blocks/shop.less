@@ -1,0 +1,27 @@
+.shop {
+  width: 260px;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 1050px;
+  }
+}
+
+.shop__item:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+}

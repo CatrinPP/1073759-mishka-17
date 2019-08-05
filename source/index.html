@@ -11,13 +11,13 @@
     <header class="page-header  page-header--index">
       <nav class="page-header__navigation-main  navigation-main  wrapper">
         <div class="navigation-main__header">
-          <a class="navigation-main__logo  logo" href="index.html">
-            <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+          <a class="navigation-main__logo  logo">
+            <img class="logo__image  logo__image--decorated" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
           </a>
           <button class="navigation-main__toggle" type="button">Переключение видимости меню</button>
         </div>
         <ul class="navigation-main__site-menu  site-menu">
-          <li class="site-menu__item"><a class="site-menu__link">Каталог товаров</a></li>
+          <li class="site-menu__item"><a class="site-menu__link" href="catalog.html">Каталог товаров</a></li>
           <li class="site-menu__item"><a class="site-menu__link" href="form.html">Вязание на заказ</a></li>
         </ul>
         <ul class="navigation-main__user-menu  user-menu">
@@ -31,7 +31,7 @@
         <p class="navigation-main__delivery-text">Бесплатная доставка по России</p>
       </nav>
       <div class="page-header__background">
-        <p class="page-header__slogan">Милые штуки ручной работы для дома</p>
+        <p class="page-header__slogan">Милые штуки ручной работы&nbsp;для дома</p>
       </div>
       <section class="page-header__catalog-menu  catalog-menu">
         <a class="catalog-menu__item  catalog-menu__item" href="#">Предметы интерьера</a>
@@ -49,12 +49,12 @@
         <section class="week-product__card">
           <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
           <dl class="week-product__characteristics">
-            <dt>Цвет:</dt>
-              <dd>«Тиффани»/серый</dd>
-            <dt>Диаметр:</dt>
-              <dd>25 см</dd>
-            <dt>Высота:</dt>
-              <dd>15 см</dd>
+            <dt class="week-product__key">Цвет:</dt>
+              <dd class="week-product__value">«Тиффани»/серый</dd>
+            <dt class="week-product__key">Диаметр:</dt>
+              <dd class="week-product__value">25 см</dd>
+            <dt class="week-product__key">Высота:</dt>
+              <dd class="week-product__value">15 см</dd>
           </dl>
           <img class="week-product__image" src="http://placehold.it/260x315" width="260" height="315" alt="Сет из трех вязаных корзинок в руках">
           <p class="week-product__price">Цена: 990 руб.</p>
@@ -130,24 +130,18 @@
       <p class="popup__title">Добавить в корзину</p>
       <fieldset class="popup__size-list">
         <p class="popup__text">Выберите размер:</p>
-        <p>
-          <label>
-            <input class="popup__input-radio  visually-hidden" type="radio" value="S" name="size" checked>
-            <span class="popup__size">S</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input class="popup__input-radio  visually-hidden" type="radio" value="M" name="size">
-            <span class="popup__size">M</span>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input class="popup__input-radio  visually-hidden" type="radio" value="L" name="size">
-            <span class="popup__size">L</span>
-          </label>
-        </p>
+        <label>
+          <input class="popup__input-radio  visually-hidden" type="radio" value="S" name="size" checked>
+          <span class="popup__size">S</span>
+        </label>
+        <label>
+          <input class="popup__input-radio  visually-hidden" type="radio" value="M" name="size">
+          <span class="popup__size">M</span>
+        </label>
+        <label>
+          <input class="popup__input-radio  visually-hidden" type="radio" value="L" name="size">
+          <span class="popup__size">L</span>
+        </label>
       </fieldset>
       <button class="popup__btn  button  button--popup" type="submit">Добавить</button>
     </form>

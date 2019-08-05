@@ -1,10 +1,88 @@
-.video-card__title {
+.video-card {
+  width: 260px;
+
   @media (min-width: @tablet-width) {
-    font-size: 20px;
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    display: block;
   }
 }
 
+.video-card__title {
+  display: block;
+  margin: 0;
+  padding: 26px 26px 26px 90px;
+
+  font-size: 17px;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
+}
+
+.video-card__visual {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    order: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    float: left;
+  }
+}
+
+.video-card__image {
+  display: block;
+  width: 260px;
+  height: 150px;
+
+  @media (min-width: @tablet-width) {
+    width: 682px;
+    height: 455px;
+  }
+}
+
+.video-card__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: 101px;
+  height: 77px;
+  margin: -36px -50px;
+}
+
 .video-card__description {
+  width: 260px;
+  padding: 27px 34px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 368px;
+  }
+}
+
+.video-card__text {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-weight: 400;
   font-size: 13px;
   color: @color-font--secondary;
@@ -16,5 +94,6 @@
 }
 
 .video-card__btn {
+  width: 100%;
   line-height: 16px;
 }
