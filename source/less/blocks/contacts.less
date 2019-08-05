@@ -1,31 +1,21 @@
-.contacts__title {
-  margin: 0;
+.contacts {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 890px;
 
-  font-size: 18px;
-  line-height: 30px;
+  //Временно
+  background-color: lightcoral;
+  border: 1px solid grey;
 
   @media (min-width: @tablet-width) {
-    font-size: 43px;
-    line-height: 50px;
+    width: @tablet-width;
+    min-height: 900px;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 50px;
-    line-height: 57px;
+    width: @desktop-width;
+    min-height: 530px;
+    margin-bottom: 70px;
   }
-}
-
-.contacts__list {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
-  color: @color-font--secondary;
-
-  @media (min-width: @tablet-width) {
-    font-size: 17px;
-  }
-}
-
-.contacts__text {
-  margin: 0;
 }

@@ -1,3 +1,16 @@
+.catalog-menu {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: -119px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -150px;
+  }
+}
+
 .catalog-menu__item {
   display: block;
   width: 100%;
@@ -8,6 +21,10 @@
   text-align: left;
 
   background-color: @color-vibrant;
+
+  @media (min-width: @desktop-width) {
+    padding: 30px 305px 30px 35px;
+  }
 
   &--another {
     background-color: @color-vibrant--dark;

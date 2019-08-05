@@ -1,32 +1,20 @@
 .reviews-list {
-  padding: 30px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 650px;
+
+  //Временно
+  background-color: lightgreen;
+  border: 1px solid grey;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-  }
-}
-
-.reviews-list__title {
-  margin: 0;
-  margin-bottom: 38px;
-
-  font-size: 25px;
-  line-height: 30px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 43px;
-    line-height: 50px;
+    width: @tablet-width;
+    min-height: 460px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 50px;
-    line-height: 57px;
-  }
-}
-
-.reviews-list__btn {
-  @media (max-width: @tablet-width - 1) {
-    font-size: 18px;
+    width: @desktop-width;
   }
 }

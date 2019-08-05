@@ -1,15 +1,18 @@
 .shop {
   width: 260px;
-  margin-bottom: 30px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 
   @media (min-width: @tablet-width) {
-    width: 668px;
-    margin-bottom: 53px;
+    width: @tablet-width - 100px;
+    padding-top: 64px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-    width: 1050px;
+    width: @desktop-width - 100px;
+    padding-top: 138px;
   }
 }
 
@@ -17,7 +20,7 @@
   margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: @desktop-width) {

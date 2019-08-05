@@ -59,13 +59,14 @@
 }
 
 .item-card__description {
-  padding: 30px;
+  padding: 26px 27px;
 
   @media (min-width: @tablet-width) {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-right: 65px;
   }
 
   @media (min-width: @desktop-width) {
@@ -75,15 +76,16 @@
 }
 
 .item-card__order {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
 }
 
 .item-card__label {
+  padding-bottom: 24px;
+
   @media (min-width: @desktop-width) {
-    margin-bottom: 24px;
+    padding-bottom: 0;
     min-height: 92px;
   }
 }
