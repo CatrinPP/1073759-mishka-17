@@ -2,20 +2,139 @@
   width: 320px;
   margin-left: auto;
   margin-right: auto;
-  min-height: 890px;
-
-  //Временно
-  background-color: lightcoral;
-  border: 1px solid grey;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
-    min-height: 900px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: @desktop-width) {
+    display: block;
     width: @desktop-width;
-    min-height: 530px;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
+    padding: 40px 50px 40px 222px;
   }
+}
+
+.contacts__title {
+  order: 0;
+  margin: 0;
+  padding-bottom: 25px;
+
+  font-size: 18px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 25px;
+    margin-bottom: 28px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 72px;
+    padding-bottom: 48px;
+    margin-bottom: 0;
+
+    font-size: 50px;
+    line-height: 57px;
+  }
+}
+
+.contacts__list {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: @color-font--secondary;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    font-size: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.contacts__details {
+  order: 1;
+  margin: 0;
+  margin-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin-bottom: 77px;
+  }
+}
+
+.contacts__map {
+  order: 2;
+  width: 322px;
+  height: 457px;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+    float: right;
+  }
+}
+
+.contacts__btn {
+  order: 3;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}
+
+.contacts__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: 48px;
+    }
+  }
+}
+
+.contacts__key {
+  margin: 0;
+  width: 80px;
+}
+
+.contacts__value {
+  margin: 0;
 }
