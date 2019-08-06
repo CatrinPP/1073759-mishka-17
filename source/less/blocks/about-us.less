@@ -35,29 +35,18 @@
 }
 
 .about-us__list {
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
-
-  @media (min-width: @tablet-width) {
-    width: 320px;
-    margin-right: 13px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: 30px;
-  }
-}
-
-.about-us__texts {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (min-width: @desktop-width) {
+    // margin-right: 30px;
+  }
 }
 
 .about-us__characteristic {
+  margin: 0;
   padding-top: 83px;
 
   line-height: 20px;
@@ -65,8 +54,34 @@
   @media (min-width: @tablet-width) {
     padding-top: 70px;
     padding-bottom: 40px;
+    width: 300px;
+    flex-grow: 1;
 
     font-size: 20px;
     line-height: 22px;
+
+    &--eco {
+      order: 0;
+    }
+
+    &--price {
+      order: 2;
+    }
+
+    &--likes {
+      order: 4;
+    }
+
+    &--handmade {
+      order: 1;
+    }
+
+    &--local {
+      order: 3;
+    }
+
+    &--present {
+      order: 5;
+    }
   }
 }

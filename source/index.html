@@ -29,13 +29,13 @@
         </ul>
         <p class="main-nav__delivery-text">Бесплатная доставка по России</p>
       </nav>
-      <div class="page-header__background">
-        <p class="page-header__slogan">Милые штуки ручной работы&nbsp;для дома</p>
+      <div class="page-header__slogan-menu-wrap">
+        <p class="page-header__slogan  slogan">Милые штуки ручной работы&nbsp;для дома</p>
+        <section class="page-header__products-menu  products-menu">
+          <a class="products-menu__item  products-menu__item" href="#">Предметы интерьера</a>
+          <a class="products-menu__item  products-menu__item--another" href="#">Детские игрушки</a>
+        </section>
       </div>
-      <section class="page-header__catalog-menu  catalog-menu">
-        <a class="catalog-menu__item  catalog-menu__item" href="#">Предметы интерьера</a>
-        <a class="catalog-menu__item  catalog-menu__item--another" href="#">Детские игрушки</a>
-      </section>
       <h1 class="visually-hidden">Интернет-магазин вязаных изделий "Мишка"</h1>
     </header>
     <main class="main">
@@ -67,17 +67,13 @@
       </article>
       <section class="main__about-us  about-us  wrapper">
         <h2 class="about-us__title">Коротко о нас:</h2>
-        <div class="about-us__texts">
-          <ul class="about-us__list">
-            <li class="about-us__characteristic  about-us__characteristic--eco">Экологически<br>чистые материалы</li>
-            <li class="about-us__characteristic  about-us__characteristic--price">Скандинавский стиль<br>по российской цене</li>
-            <li class="about-us__characteristic  about-us__characteristic--likes">Увеличивает лайки<br>на фотографиях</li>
-          </ul>
-          <ul class="about-us__list">
-            <li class="about-us__characteristic  about-us__characteristic--handmade">Связано вручную с<br>любовью и умилением</li>
-            <li class="about-us__characteristic  about-us__characteristic--local">Поддержка отечественного производителя</li>
-            <li class="about-us__characteristic  about-us__characteristic--present">Поставляется в<br>подарочной упаковке</li>
-          </ul>
+        <div class="about-us__list">
+          <p class="about-us__characteristic  about-us__characteristic--eco">Экологически<br>чистые материалы</p>
+          <p class="about-us__characteristic  about-us__characteristic--price">Скандинавский стиль<br>по российской цене</p>
+          <p class="about-us__characteristic  about-us__characteristic--likes">Увеличивает лайки<br>на фотографиях</p>
+          <p class="about-us__characteristic  about-us__characteristic--handmade">Связано вручную с<br>любовью и умилением</p>
+          <p class="about-us__characteristic  about-us__characteristic--local">Поддержка отечественного производителя</p>
+          <p class="about-us__characteristic  about-us__characteristic--present">Поставляется в<br>подарочной упаковке</p>
         </div>
       </section>
       <section class="main__reviews  reviews">
@@ -136,24 +132,24 @@
         </a>
       </section>
     </footer>
-    <form class="popup" action="https://echo.htmlacademy.ru" method="POST">
-      <p class="popup__title">Добавить в корзину</p>
-      <fieldset class="popup__size-list">
-        <p class="popup__text">Выберите размер:</p>
-        <label>
-          <input class="popup__input-radio  visually-hidden" type="radio" value="S" name="size" checked>
-          <span class="popup__size">S</span>
+    <form class="cart-form" action="https://echo.htmlacademy.ru" method="POST">
+      <p class="cart-form__title">Добавить в корзину</p>
+      <fieldset class="cart-form__size-list">
+        <p class="cart-form__text">Выберите размер:</p>
+        <label class="cart-form__item  radio">
+          <input class="radio__control  visually-hidden" type="radio" value="S" name="size" checked>
+          <span class="radio__label">S</span>
         </label>
-        <label>
-          <input class="popup__input-radio  visually-hidden" type="radio" value="M" name="size">
-          <span class="popup__size">M</span>
+        <label class="cart-form__item  radio">
+          <input class="radio__control  visually-hidden" type="radio" value="M" name="size">
+          <span class="radio__label">M</span>
         </label>
-        <label>
-          <input class="popup__input-radio  visually-hidden" type="radio" value="L" name="size">
-          <span class="popup__size">L</span>
+        <label class="cart-form__item  radio">
+          <input class="radio__control  visually-hidden" type="radio" value="L" name="size">
+          <span class="radio__label">L</span>
         </label>
       </fieldset>
-      <button class="popup__btn  button  button--popup" type="submit">Добавить</button>
+      <button class="cart-form__btn  button  button--cart-add" type="submit">Добавить</button>
     </form>
   </body>
 </html>

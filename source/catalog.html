@@ -29,9 +29,7 @@
         </ul>
         <p class="main-nav__delivery-text">Бесплатная доставка по России</p>
       </nav>
-      <div class="page-header__background">
-        <h1 class="page-header__title  page-title">Каталог товаров</h1>
-      </div>
+      <h1 class="page-header__title  page-title">Каталог товаров</h1>
     </header>
     <main class="main">
       <section class="main__shop  shop  wrapper">
@@ -118,24 +116,24 @@
         </a>
       </section>
     </footer>
-    <form class="popup" action="https://echo.htmlacademy.ru" method="POST">
-      <p class="popup__title">Добавить в корзину</p>
-      <fieldset class="popup__size-list">
-        <p class="popup__text">Выберите размер:</p>
-        <label>
-          <input class="popup__input-radio  visually-hidden" type="radio" value="S" name="size" checked>
-          <span class="popup__size">S</span>
+    <form class="cart-form" action="https://echo.htmlacademy.ru" method="POST">
+      <p class="cart-form__title">Добавить в корзину</p>
+      <fieldset class="cart-form__size-list">
+        <p class="cart-form__text">Выберите размер:</p>
+        <label class="cart-form__item  radio">
+          <input class="radio__control  visually-hidden" type="radio" value="S" name="size" checked>
+          <span class="radio__label">S</span>
         </label>
-        <label>
-          <input class="popup__input-radio  visually-hidden" type="radio" value="M" name="size">
-          <span class="popup__size">M</span>
+        <label class="cart-form__item  radio">
+          <input class="radio__control  visually-hidden" type="radio" value="M" name="size">
+          <span class="radio__label">M</span>
         </label>
-        <label>
-          <input class="popup__input-radio  visually-hidden" type="radio" value="L" name="size">
-          <span class="popup__size">L</span>
+        <label class="cart-form__item  radio">
+          <input class="radio__control  visually-hidden" type="radio" value="L" name="size">
+          <span class="radio__label">L</span>
         </label>
       </fieldset>
-      <button class="popup__btn  button  button--popup" type="submit">Добавить</button>
+      <button class="cart-form__btn  button  button--cart-add" type="submit">Добавить</button>
     </form>
   </body>
 </html>
