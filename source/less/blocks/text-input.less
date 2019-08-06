@@ -1,0 +1,37 @@
+.text-input {
+  input[type="text"]::-webkit-input-placeholder {
+    color: @color-font--fade;
+  }
+
+  input[type="text"]::-moz-placeholder {
+    color: @color-font--fade;
+  }
+}
+
+.text-input__label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 22px;
+  }
+}
+
+.text-input__field {
+  padding-top: 4px;
+  padding-bottom: 18px;
+
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 5px 18px 12px;
+    flex-grow: 1;
+
+    font-size: 19px;
+  }
+}

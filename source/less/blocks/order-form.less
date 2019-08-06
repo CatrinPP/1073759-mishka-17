@@ -1,6 +1,6 @@
-.order {
+.order-form {
   padding-top: 27px;
-  padding-bottom: 55px;
+  padding-bottom: 50px;
 
   @media (min-width: @tablet-width) {
     padding-top: 57px;
@@ -12,8 +12,8 @@
   }
 }
 
-.order__text {
-  margin: 0;
+.order-form__text {
+  margin-top: 0;
   margin-bottom: 23px;
 
   font-size: 13px;
@@ -29,12 +29,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 30px 30px 30px 110px;
+    padding: 30px 224px;
     margin-bottom: 0;
   }
 }
 
-.order__remark {
+.order-form__remark {
   margin: 0;
   margin-bottom: 30px;
 
@@ -53,7 +53,7 @@
   }
 }
 
-.order__btn {
+.order-form__btn {
   width: 100%;
 
   @media (min-width: @tablet-width) {
@@ -66,16 +66,20 @@
   }
 }
 
-.order__contacts-wrap {
+.order-form__contacts-wrap {
   @media (min-width: @tablet-width) {
     padding-top: 53px;
-    padding-bottom: 53px;
+    padding-bottom: 45px;
 
     background-color: @color-secondary;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 40px;
+  }
 }
 
-.order__footer {
+.order-form__bottom {
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;

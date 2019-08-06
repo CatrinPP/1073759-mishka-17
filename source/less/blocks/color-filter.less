@@ -1,4 +1,4 @@
-.order-color {
+.color-filter {
   padding: 0;
   margin-bottom: 26px;
 
@@ -7,9 +7,13 @@
   @media (min-width: @tablet-width) {
     background-color: @color-secondary;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
-.order-color__title {
+.color-filter__title {
   margin: 0;
   margin-bottom: 23px;
 
@@ -27,8 +31,8 @@
   }
 }
 
-.order-color__option {
-  margin: 0;
+.color-filter__item {
+  display: block;
   padding: 12px 10px 12px 60px;
 
   line-height: 18px;
@@ -45,7 +49,7 @@
   }
 }
 
-.order-color__wrap {
+.color-filter__wrap {
   @media (min-width: @tablet-width) {
     padding-top: 42px;
     padding-bottom: 25px;
@@ -58,7 +62,7 @@
   }
 }
 
-.order-color__list {
+.color-filter__list {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;

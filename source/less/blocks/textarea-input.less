@@ -1,0 +1,35 @@
+.textarea-input {
+  input[type="text"]::-webkit-input-placeholder {
+    color: @color-font--fade;
+  }
+
+  input[type="text"]::-moz-placeholder {
+    color: @color-font--fade;
+  }
+}
+
+.textarea-input__label {
+  @media (min-width: @tablet-width) {
+    margin-right: 22px;
+  }
+}
+
+.textarea-input__field {
+  padding: 15px 14px 18px 14px;
+
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    flex-grow: 1;
+
+    font-size: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+  }
+}
