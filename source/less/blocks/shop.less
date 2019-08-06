@@ -1,22 +1,19 @@
 .shop {
-  width: 260px;
   padding-top: 35px;
   padding-bottom: 35px;
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width - 100px;
     padding-top: 64px;
     padding-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-    width: @desktop-width - 100px;
     padding-top: 138px;
   }
 }
 
-.shop__item:not(:last-child) {
+.shop__card:not(:last-child) {
   margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
