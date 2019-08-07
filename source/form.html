@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Интернет-магазин "Мишка" - Форма заказа</title>
+    <meta name="viewport" content="width=device-width,initial-scake=1">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="page-header__main-nav  main-nav  wrapper">
+        <div class="main-nav__logo-wrap">
+          <a class="main-nav__logo  logo" href="index.html">
+            <img class="logo__img  logo__img--decorated" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+          </a>
+          <button class="main-nav__toggle" type="button">Переключение видимости меню</button>
+        </div>
+        <ul class="main-nav__site-menu  site-menu">
+          <li class="site-menu__item"><a class="site-menu__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="site-menu__item"><a class="site-menu__link">Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-nav__user-menu  user-menu">
+          <li class="user-menu__item--search"><a class="user-menu__link  user-menu__link" href="#">Поиск по сайту</a></li>
+          <li class="user-menu__item"><a class="user-menu__link" href="#">Корзина: пока пуста</a></li>
+        </ul>
+        <ul class="main-nav__special-menu  special-menu">
+          <li class="special-menu__item"><a class="special-menu__link" href="#">Новые поступления</a></li>
+          <li class="special-menu__item"><a class="special-menu__link" href="#">Распродажа</a></li>
+        </ul>
+        <p class="main-nav__delivery-text">Бесплатная доставка по России</p>
+      </nav>
+      <h1 class="page-header__title  page-title">Вязание на заказ</h1>
+    </header>
+    <main class="main">
+      <form class="order-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="order-form__text  wrapper  wrapper--larger-padding">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <div class="order-form__type  type-filter  wrapper  wrapper--larger-padding">
+          <p class="type-filter__title">Тип</p>
+          <div class="type-filter__wrap">
+            <label class="type-filter__item  radio" for="interior">
+              <span class="radio__label">Аксессуар для интерьера</span>
+              <input class="radio__control  visually-hidden" type="radio" value="interior" name="type" id="interior" checked>
+            </label>
+            <label class="type-filter__item  radio" for="toys">
+              <span class="radio__label">Детская игрушка</span>
+              <input class="radio__control  visually-hidden" type="radio" value="interior" name="type" id="toys" checked>
+            </label>
+          </div>
+        </div>
+        <div class="order-form__color  color-filter">
+          <div class="color-filter__wrap  wrapper  wrapper--larger-padding">
+            <p class="color-filter__title">Цвет</p>
+            <div class="color-filter__list">
+              <label class="color-filter__item  checkbox" for="white">
+                <span class="checkbox__label">Белый</span>
+                <input class="checkbox__control  visually-hidden" type="checkbox" name="white" value="white" id="white" checked>
+              </label>
+              <label class="color-filter__item  checkbox" for="grey">
+                <span class="checkbox__label">Серый</span>
+                <input class="checkbox__control  visually-hidden" type="checkbox" name="grey" value="grey" id="grey" checked>
+              </label>
+              <label class="color-filter__item  checkbox" for="tiffany">
+                <span class="checkbox__label">«Тиффани»</span>
+                <input class="checkbox__control  visually-hidden" type="checkbox" name="tiffany" value="tiffany" id="tiffany">
+              </label>
+              <label class="color-filter__item  checkbox" for="black">
+                <span class="checkbox__label">Черный</span>
+                <input class="checkbox__control  visually-hidden" type="checkbox" name="black" value="black" id="black">
+              </label>
+              <label class="color-filter__item  checkbox" for="rose">
+                <span class="checkbox__label">Розовый</span>
+                <input class="checkbox__control  visually-hidden" type="checkbox" name="rose" value="rose" id="rose">
+              </label>
+              <label class="color-filter__item  checkbox" for="orange">
+                <span class="checkbox__label">Оранжевый</span>
+                <input class="checkbox__control  visually-hidden" type="checkbox" name="orange" value="orange" id="orange">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="order-form__user-form  input-form  wrapper  wrapper--larger-padding">
+          <p class="input-form__title">Фио</p>
+          <div class="input-form__wrap">
+            <label class="input-form__item  input" for="name">
+              <span class="input__label">Имя:</span>
+              <input class="input__control  placeholder" type="text" name="username" placeholder="Введите ваше имя*" id="name">
+            </label>
+            <label class="input-form__item  input" for="surname">
+              <span class="input__label">Фамилия:</span>
+              <input class="input__control  placeholder" type="text" name="surname" placeholder="Укажите фамилию*" id="surname">
+            </label>
+            <label class="input-form__item  input" for="fathername">
+              <span class="input__label">Отчество:</span>
+              <input class="input__control  placeholder" type="text" name="fathername" placeholder="Отчество, если желаете" id="fathername">
+            </label>
+          </div>
+        </div>
+        <div class="order-form__contacts-wrap">
+          <div class="wrapper  wrapper--larger-padding">
+            <div class="order-form__tel-form  input-form">
+              <p class="input-form__title">Тел</p>
+              <label class="input-form__item  input  input--icon">
+                <input class="input__control  placeholder" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              </label>
+            </div>
+            <div class="order-form__email-form  input-form">
+              <p class="input-form__title">E-mail</p>
+              <label class="input-form__item  input  input--icon">
+                <input class="input__control  placeholder" type="email" name="email" placeholder="Ваш Email*">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="order-form__extra-form  textarea  wrapper  wrapper--larger-padding">
+          <p class="textarea__title">Доп</p>
+          <label class="textarea__item">
+            <textarea class="textarea__control  placeholder" rows="6" cols="25" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </label>
+        </div>
+        <div class="order-form__bottom  wrapper  wrapper--larger-padding">
+          <p class="order-form__remark">*Поля обязательны для заполнения</p>
+          <button class="order-form__btn  button" type="submit">Отправить заказ</button>
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer  wrapper">
+      <a class="page-footer__logo  logo" href="index.html">
+        <img class="logo__img" src="http://placehold.it/102x34" width="102" height="34" alt="Логотип магазина Мишка">
+      </a>
+      <section class="page-footer__social  social">
+        <a class="social__link" href="#">
+          <img class="social__logo" src="http://placehold.it/30x30" width="30" height="30" alt="Логотип Фейсбук">
+          Магазин Мишка на Фейсбуке
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__logo" src="http://placehold.it/30x30" width="30" height="30" alt="Логотип Вконтакте">
+          Магазин Мишка во Вконтакте
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__logo" src="http://placehold.it/30x30" width="30" height="30" alt="Логотип Инстаграм">
+          Магазин Мишка в Инстаграме
+        </a>
+      </section>
+      <section class="page-footer__copyright  copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__img" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>

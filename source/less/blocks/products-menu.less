@@ -1,0 +1,36 @@
+.products-menu {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.products-menu__item {
+  display: block;
+  width: 100%;
+  padding: 25px 115px 30px 30px;
+
+  font-size: 19px;
+  color: @color-main;
+  text-align: left;
+
+  background-color: @color-vibrant;
+
+  @media (min-width: @tablet-width) {
+    padding: 30px 115px 30px 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 30px 305px 30px 35px;
+  }
+
+  &--another {
+    background-color: @color-vibrant--dark;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

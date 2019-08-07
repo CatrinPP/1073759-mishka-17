@@ -1,0 +1,122 @@
+.video-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 45px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding-bottom: 60px;
+    margin-bottom: 105px;
+  }
+}
+
+.video-card__title {
+  order: 0;
+  margin: 0;
+  padding: 24px 26px 24px 90px;
+
+  font-size: 17px;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    padding: 35px 107px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 97px;
+    padding-right: 55px;
+    padding-bottom: 35px;
+  }
+}
+
+.video-card__visual {
+  position: relative;
+
+  order: 1;
+
+  @media (min-width: @tablet-width) {
+    order: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 0;
+    float: left;
+    margin-right: 78px;
+  }
+}
+
+.video-card__img {
+  display: block;
+  width: 260px;
+  height: 150px;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 682px;
+  }
+}
+
+.video-card__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: 101px;
+  height: 77px;
+  margin: -36px -50px;
+}
+
+.video-card__description {
+  order: 2;
+  width: 260px;
+  padding: 27px 34px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+
+.video-card__text {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-weight: 400;
+  font-size: 13px;
+  color: @color-secondary;
+
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.video-card__btn {
+  order: 3;
+  width: 100%;
+
+  line-height: 17px;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    width: 230px;
+  }
+}

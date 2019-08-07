@@ -1,0 +1,37 @@
+.input__label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    margin-right: 22px;
+  }
+}
+
+.input__control {
+  padding-top: 4px;
+  padding-bottom: 18px;
+
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 18px 9px;
+    flex-grow: 1;
+
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  .input--icon & {
+    padding-right: 45px;
+
+    @media (min-width: @tablet-width) {
+      padding-right: 80px;
+    }
+  }
+}

@@ -2,11 +2,156 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Интернет-магазин "Мишка" - Главная</title>
+    <meta name="viewport" content="width=device-width,initial-scake=1">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header  page-header--index">
+      <nav class="page-header__main-nav  main-nav  wrapper">
+        <div class="main-nav__logo-wrap">
+          <a class="main-nav__logo  logo">
+            <img class="logo__img  logo__img--decorated" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
+          </a>
+          <button class="main-nav__toggle" type="button">Переключение видимости меню</button>
+        </div>
+        <ul class="main-nav__site-menu  site-menu">
+          <li class="site-menu__item"><a class="site-menu__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="site-menu__item"><a class="site-menu__link" href="form.html">Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-nav__user-menu  user-menu">
+          <li class="user-menu__item--search"><a class="user-menu__link  user-menu__link" href="#">Поиск по сайту</a></li>
+          <li class="user-menu__item"><a class="user-menu__link" href="#">Корзина: пока пуста</a></li>
+        </ul>
+        <ul class="main-nav__special-menu  special-menu">
+          <li class="special-menu__item"><a class="special-menu__link" href="#">Новые поступления</a></li>
+          <li class="special-menu__item"><a class="special-menu__link" href="#">Распродажа</a></li>
+        </ul>
+        <p class="main-nav__delivery-text">Бесплатная доставка по России</p>
+      </nav>
+      <div class="page-header__slogan-menu">
+        <p class="page-header__slogan  slogan">Милые штуки ручной работы&nbsp;для дома</p>
+        <section class="page-header__products-menu  products-menu">
+          <a class="products-menu__item  products-menu__item" href="#">Предметы интерьера</a>
+          <a class="products-menu__item  products-menu__item--another" href="#">Детские игрушки</a>
+        </section>
+      </div>
+      <h1 class="visually-hidden">Интернет-магазин вязаных изделий "Мишка"</h1>
+    </header>
+    <main class="main">
+      <article class="main__week-product  week-product  wrapper">
+        <div class="week-product__header">
+          <p class="week-product__name">Вязаные корзинки</p>
+          <h2 class="week-product__title">Товар недели</h2>
+        </div>
+        <div class="week-product__card">
+          <img class="week-product__img" src="http://placehold.it/260x315" width="260" height="315" alt="Сет из трех вязаных корзинок в руках">
+          <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+          <div class="week-product__characteristics">
+            <div class="week-product__characteristics-line">
+              <p class="week-product__label">Цвет:</p>
+              <p class="week-product__value">«Тиффани»/серый</p>
+            </div>
+            <div class="week-product__characteristics-line">
+              <p class="week-product__label">Диаметр:</p>
+              <p class="week-product__value">25 см</p>
+            </div>
+            <div class="week-product__characteristics-line">
+              <p class="week-product__label">Высота:</p>
+              <p class="week-product__value">15 см</p>
+            </div>
+          </div>
+          <p class="week-product__price">Цена: 990 руб.</p>
+          <button class="week-product__btn  button" type="button">Заказать</button>
+        </div>
+      </article>
+      <section class="main__about-us  about-us  wrapper">
+        <h2 class="about-us__title">Коротко о нас:</h2>
+        <div class="about-us__list">
+          <p class="about-us__characteristic  about-us__characteristic--eco">Экологически<br>чистые материалы</p>
+          <p class="about-us__characteristic  about-us__characteristic--price">Скандинавский стиль<br>по российской цене</p>
+          <p class="about-us__characteristic  about-us__characteristic--likes">Увеличивает лайки<br>на фотографиях</p>
+          <p class="about-us__characteristic  about-us__characteristic--handmade">Связано вручную с<br>любовью и умилением</p>
+          <p class="about-us__characteristic  about-us__characteristic--local">Поддержка отечественного производителя</p>
+          <p class="about-us__characteristic  about-us__characteristic--present">Поставляется в<br>подарочной упаковке</p>
+        </div>
+      </section>
+      <section class="main__reviews  reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+      <div class="reviews__item  review">
+          <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="review__author">Анастасия Красильникова</p>
+          <p class="review__account">@misssssiskras</p>
+        </div>
+        <div class="reviews__nav">
+          <button class="reviews__arrow  reviews__arrow--left" type="button">Листать назад</button>
+          <button class="reviews__arrow  reviews__arrow--right" type="button">Листать вперед</button>
+        </div>
+        <a class="reviews__btn  button" href="reviews.html">Написать</a>
+      </section>
+      <section class="main__contacts  contacts">
+        <img class="contacts__map" src="http://placehold.it/320x457" width="320" height="457" alt="Адрес компании по адресу: г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101">
+        <div class="contacts__details">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__list">
+            <div class="contacts__item">
+              <p class="contacts__label">e-mail:</p>
+              <p class="contacts__value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__label">адрес</p>
+              <p class="contacts__value">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</p>
+            </div>
+          </div>
+        </div>
+        <a class="contacts__btn  button" href="feedback.html">Напишите нам</a>
+      </section>
+    </main>
+    <footer class="page-footer  wrapper">
+      <a class="page-footer__logo  logo">
+        <img class="logo__img" src="http://placehold.it/102x34" width="102" height="34" alt="Логотип магазина Мишка">
+      </a>
+      <section class="page-footer__social  social">
+        <a class="social__link" href="#">
+          <img class="social__logo" src="http://placehold.it/30x30" width="30" height="30" alt="Логотип Фейсбук">
+          Магазин Мишка на Фейсбуке
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__logo" src="http://placehold.it/30x30" width="30" height="30" alt="Логотип Вконтакте">
+          Магазин Мишка во Вконтакте
+        </a>
+        <a class="social__link" href="#">
+          <img class="social__logo" src="http://placehold.it/30x30" width="30" height="30" alt="Логотип Инстаграм">
+          Магазин Мишка в Инстаграме
+        </a>
+      </section>
+      <section class="page-footer__copyright  copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__img" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </section>
+    </footer>
+    <div class="popup">
+      <form class="popup__form cart-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="cart-form__title">Добавить в корзину</p>
+        <fieldset class="cart-form__size-list">
+          <p class="cart-form__text">Выберите размер:</p>
+          <label class="cart-form__item  radio">
+            <input class="radio__control  visually-hidden" type="radio" value="S" name="size" checked>
+            <span class="radio__label">S</span>
+          </label>
+          <label class="cart-form__item  radio">
+            <input class="radio__control  visually-hidden" type="radio" value="M" name="size">
+            <span class="radio__label">M</span>
+          </label>
+          <label class="cart-form__item  radio">
+            <input class="radio__control  visually-hidden" type="radio" value="L" name="size">
+            <span class="radio__label">L</span>
+          </label>
+        </fieldset>
+        <button class="cart-form__btn  button  button--cart-add" type="submit">Добавить</button>
+      </form>
+    </div>
   </body>
 </html>

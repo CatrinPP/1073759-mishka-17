@@ -1,0 +1,40 @@
+.site-menu {
+  width: 100%;
+  margin: 0;
+  padding-left: 17px;
+
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+    padding-left: 0;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 0;
+    width: 375px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.site-menu__item {
+  padding: 28px;
+
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.site-menu__link {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+    font-size: 15px;
+  }
+}
