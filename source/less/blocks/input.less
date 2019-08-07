@@ -1,23 +1,14 @@
-.text-input {
-  input[type="text"]::-webkit-input-placeholder {
-    color: @color-font--fade;
-  }
-
-  input[type="text"]::-moz-placeholder {
-    color: @color-font--fade;
-  }
-}
-
-.text-input__label {
+.input__label {
   padding-top: 10px;
   padding-bottom: 10px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 0;
     margin-right: 22px;
   }
 }
 
-.text-input__field {
+.input__control {
   padding-top: 4px;
   padding-bottom: 18px;
 
@@ -29,9 +20,18 @@
   border: none;
 
   @media (min-width: @tablet-width) {
-    padding: 5px 18px 12px;
+    padding: 0 18px 9px;
     flex-grow: 1;
 
     font-size: 19px;
+    line-height: 19px;
+  }
+
+  .input--icon & {
+    padding-right: 45px;
+
+    @media (min-width: @tablet-width) {
+      padding-right: 80px;
+    }
   }
 }

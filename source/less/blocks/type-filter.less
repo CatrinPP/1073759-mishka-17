@@ -13,6 +13,7 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 24px;
+    margin-bottom: 45px;
   }
 }
 
@@ -20,7 +21,7 @@
   margin: 0;
   margin-bottom: 23px;
 
-  line-height: 16px;
+  line-height: 17px;
   color: @color-vibrant;
   text-transform: uppercase;
 
@@ -38,17 +39,20 @@
   display: block;
   padding: 12px 10px 12px 60px;
 
+
   line-height: 18px;
 
   @media (min-width: @tablet-width) {
     padding: 20px 20px 20px 120px;
+    margin-bottom: 18px;
 
     font-size: 19px;
+    line-height: 19px;
   }
 
-  &:not(:last-child) {
+  &:last-child {
     @media (min-width: @tablet-width) {
-      margin-bottom: 18px;
+      margin-bottom: 0;
     }
   }
 }

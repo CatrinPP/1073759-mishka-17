@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <nav class="page-header__main-nav  main-nav  wrapper">
-        <div class="main-nav__logo-btn-wrap">
+        <div class="main-nav__logo-wrap">
           <a class="main-nav__logo  logo" href="index.html">
             <img class="logo__img  logo__img--decorated" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина Мишка">
           </a>
@@ -116,24 +116,26 @@
         </a>
       </section>
     </footer>
-    <form class="cart-form" action="https://echo.htmlacademy.ru" method="POST">
-      <p class="cart-form__title">Добавить в корзину</p>
-      <fieldset class="cart-form__size-list">
-        <p class="cart-form__text">Выберите размер:</p>
-        <label class="cart-form__item  radio">
-          <input class="radio__control  visually-hidden" type="radio" value="S" name="size" checked>
-          <span class="radio__label">S</span>
-        </label>
-        <label class="cart-form__item  radio">
-          <input class="radio__control  visually-hidden" type="radio" value="M" name="size">
-          <span class="radio__label">M</span>
-        </label>
-        <label class="cart-form__item  radio">
-          <input class="radio__control  visually-hidden" type="radio" value="L" name="size">
-          <span class="radio__label">L</span>
-        </label>
-      </fieldset>
-      <button class="cart-form__btn  button  button--cart-add" type="submit">Добавить</button>
-    </form>
+    <div class="popup">
+      <form class="popup__form cart-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="cart-form__title">Добавить в корзину</p>
+        <fieldset class="cart-form__size-list">
+          <p class="cart-form__text">Выберите размер:</p>
+          <label class="cart-form__item  radio">
+            <input class="radio__control  visually-hidden" type="radio" value="S" name="size" checked>
+            <span class="radio__label">S</span>
+          </label>
+          <label class="cart-form__item  radio">
+            <input class="radio__control  visually-hidden" type="radio" value="M" name="size">
+            <span class="radio__label">M</span>
+          </label>
+          <label class="cart-form__item  radio">
+            <input class="radio__control  visually-hidden" type="radio" value="L" name="size">
+            <span class="radio__label">L</span>
+          </label>
+        </fieldset>
+        <button class="cart-form__btn  button  button--cart-add" type="submit">Добавить</button>
+      </form>
+    </div>
   </body>
 </html>

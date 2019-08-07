@@ -9,7 +9,7 @@
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -49,7 +49,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  color: @color-font--secondary;
+  color: @color-secondary;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -115,17 +115,15 @@
 
 .contacts__item {
   display: flex;
-
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    margin-right: 48px;
+  }
 
-    &:not(:last-child) {
-      margin-right: 48px;
-    }
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
   }
 }
 

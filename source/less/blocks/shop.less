@@ -3,17 +3,17 @@
   padding-bottom: 35px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 64px;
+    padding-top: 68px;
     padding-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-    padding-top: 138px;
+    padding-top: 112px;
   }
 }
 
-.shop__card:not(:last-child) {
+.shop__card {
   margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
@@ -23,5 +23,10 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
     margin-right: 50px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
   }
 }

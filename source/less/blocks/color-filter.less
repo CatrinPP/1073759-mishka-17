@@ -1,11 +1,13 @@
 .color-filter {
   padding: 0;
-  margin-bottom: 26px;
+  //margin-bottom: 26px;
 
   border: none;
 
   @media (min-width: @tablet-width) {
-    background-color: @color-secondary;
+    margin-bottom: 35px;
+
+    background-color: @color-main--dark;
   }
 
   @media (min-width: @desktop-width) {
@@ -17,7 +19,7 @@
   margin: 0;
   margin-bottom: 23px;
 
-  line-height: 16px;
+  line-height: 17px;
   color: @color-vibrant;
   text-transform: uppercase;
 
@@ -34,11 +36,12 @@
 .color-filter__item {
   display: block;
   padding: 12px 10px 12px 60px;
+  margin-bottom: 20px;
 
   line-height: 18px;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
   }
 
   @media (min-width: @tablet-width) {
@@ -59,6 +62,9 @@
 
   @media (min-width: @desktop-width) {
     padding-right: 180px;
+    padding-top: 45px;
+
+    margin-bottom: 35px;
   }
 }
 
