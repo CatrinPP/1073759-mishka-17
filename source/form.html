@@ -8,19 +8,19 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-header__main-nav  main-nav  wrapper">
+      <nav class="page-header__main-nav  main-nav  main-nav--closed  main-nav--nojs  wrapper">
         <div class="main-nav__logo-wrap">
           <a class="main-nav__logo  logo" href="index.html">
             <img class="logo__img  logo__img--decorated" src="../img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
           </a>
-          <button class="main-nav__toggle" type="button">Переключение видимости меню</button>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Переключение видимости меню</span></button>
         </div>
         <ul class="main-nav__site-menu  site-menu">
           <li class="site-menu__item"><a class="site-menu__link" href="catalog.html">Каталог товаров</a></li>
           <li class="site-menu__item"><a class="site-menu__link">Вязание на заказ</a></li>
         </ul>
         <ul class="main-nav__user-menu  user-menu">
-          <li class="user-menu__item--search"><a class="user-menu__link  user-menu__link" href="#">Поиск по сайту</a></li>
+          <li class="user-menu__item  user-menu__item--search"><a class="user-menu__link  user-menu__link" href="#">Поиск по сайту</a></li>
           <li class="user-menu__item"><a class="user-menu__link" href="#">Корзина: пока пуста</a></li>
         </ul>
         <ul class="main-nav__special-menu  special-menu">
@@ -148,5 +148,6 @@
         </a>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
