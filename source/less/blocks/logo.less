@@ -1,6 +1,20 @@
+.logo {
+  &:hover .logo__img,
+  &:focus .logo__img {
+    fill: @color-vibrant--darker;
+  }
+
+  &:active .logo__img,
+  svg:active  {
+    opacity: 0.3;
+  }
+}
+
 .logo__img {
   width: 102px;
   height: 34px;
+
+  cursor: pointer;
 
   &--decorated {
     width: 86px;
