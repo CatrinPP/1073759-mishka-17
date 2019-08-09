@@ -2,16 +2,21 @@
   padding-top: 28px;
   padding-bottom: 40px;
 
+  background-image: url("/img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: contain;
+
   @media (min-width: @tablet-width) {
-    padding-top: 45px;
-    padding-bottom: 70px;
+    padding-top: 40px;
+    padding-bottom: 65px;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
 
     padding-top: 120px;
-    padding-bottom: 90px;
+    padding-bottom: 95px;
   }
 }
 
@@ -46,8 +51,8 @@
 
   @media (min-width: @tablet-width) {
     width: 130px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 14px;
+    padding-bottom: 7px;
 
     text-align: center;
     line-height: 17px;
@@ -75,7 +80,7 @@
 .week-product__img {
   order: 2;
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   width: 260px;
   height: 315px;
 
@@ -100,7 +105,7 @@
 .week-product__description {
   order: 0;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 
   font-size: 15px;
   font-weight: 400;
@@ -114,14 +119,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 46px;
   }
 }
 
 .week-product__characteristics {
   order: 1;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   font-size: 15px;
   font-weight: 400;
@@ -133,7 +138,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 104px;
+    margin-bottom: 108px;
   }
 }
 
@@ -142,10 +147,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
-  @media (min-width: @desktop-width) {
-    padding-top: 6px;
-    padding-bottom: 15px;
-  }
+  border-bottom: 1px solid @lighterGrey;
 }
 
 .week-product__label {
@@ -165,13 +167,13 @@
 .week-product__price {
   order: 3;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   text-align: center;
   color: @color-secondary;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
 
     font-size: 20px;
   }
@@ -184,7 +186,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 45px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: @desktop-width) {
