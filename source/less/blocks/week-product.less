@@ -63,6 +63,27 @@
   }
 }
 
+.week-product__header {
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    z-index: 1;
+
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 18px;
+    margin-bottom: 50px;
+  }
+}
+
 .week-product__card {
   display: flex;
   flex-direction: column;
@@ -79,7 +100,6 @@
 
 .week-product__img {
   order: 2;
-  display: block;
   margin-bottom: 24px;
   width: 260px;
   height: 315px;
@@ -135,6 +155,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 55px;
+    max-width: 290px;
   }
 
   @media (min-width: @desktop-width) {
@@ -174,29 +195,8 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
-
+    max-width: 290px;
     font-size: 20px;
-  }
-}
-
-.week-product__header {
-  margin-bottom: 23px;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 48px;
-  }
-
-  @media (min-width: @desktop-width) {
-    position: relative;
-    z-index: 1;
-
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    padding-left: 18px;
-    margin-bottom: 50px;
   }
 }
 
