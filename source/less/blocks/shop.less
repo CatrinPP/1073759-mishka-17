@@ -1,6 +1,6 @@
 .shop {
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 31px;
 
   @media (min-width: @tablet-width) {
     padding-top: 68px;
@@ -11,12 +11,16 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 112px;
-    padding-bottom: 25px;
+    padding-bottom: 26px;
   }
 }
 
 .shop__card {
   margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 54px;

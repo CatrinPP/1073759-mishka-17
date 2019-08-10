@@ -1,21 +1,32 @@
 .video-card {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+
+  border: 1px solid @lighterGrey;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 45px;
-    margin-bottom: 65px;
+    padding-bottom: 46px;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
+    min-height: 455px;
     padding-bottom: 60px;
-    margin-bottom: 105px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
 .video-card__title {
+  position: relative;
+
   order: 0;
   margin: 0;
   padding: 24px 26px 24px 90px;
@@ -23,17 +34,42 @@
   font-size: 17px;
   line-height: 24px;
 
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 28px;
+    left: 33px;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: @tablet-width) {
     order: 1;
-    padding: 35px 107px;
+    padding: 38px 105px 32px;
 
     font-size: 20px;
+
+    &::before {
+      top: 32px;
+      left: 41px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 97px;
+    padding-top: 95px;
     padding-right: 55px;
-    padding-bottom: 35px;
+    padding-bottom: 33px;
+
+    &::before {
+      top: 41px;
+      left: initial;
+      right: 255px;
+    }
   }
 }
 
@@ -76,12 +112,22 @@
   width: 101px;
   height: 77px;
   margin: -36px -50px;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .video-card__description {
   order: 2;
   width: 260px;
-  padding: 27px 34px;
+  padding: 27px 34px 32px;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -105,7 +151,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 46px;
   }
 }
 
