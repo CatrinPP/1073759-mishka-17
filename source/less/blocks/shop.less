@@ -4,12 +4,14 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 68px;
-    padding-bottom: 54px;
+    padding-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 112px;
+    padding-bottom: 25px;
   }
 }
 
@@ -17,16 +19,19 @@
   margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 30px;
     margin-right: 50px;
-  }
 
-  &:last-child {
-    margin-bottom: 0;
-    margin-right: 0;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 }
