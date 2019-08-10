@@ -109,6 +109,16 @@
 .contacts__map-section {
   position: relative;
   order: 1;
+
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    float: right;
+  }
 }
 
 .contacts__map {
@@ -117,16 +127,13 @@
 
   width: 320px;
   height: 457px;
-  margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
-    margin-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
     width: 525px;
-    float: right;
   }
 }
 
