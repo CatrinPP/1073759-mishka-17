@@ -1,11 +1,10 @@
 .color-filter {
   padding: 0;
-  //margin-bottom: 26px;
 
   border: none;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
 
     background-color: @color-main--dark;
   }
@@ -16,12 +15,29 @@
 }
 
 .color-filter__title {
+  position: relative;
+
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 
   line-height: 17px;
   color: @color-vibrant;
   text-transform: uppercase;
+
+  &::after {
+    @media (max-width: @mobile-width-only) {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: 62px;
+
+      width: 198px;
+      height: 1px;
+
+      background-color: @color-vibrant--light;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     margin-right: 85px;
@@ -35,8 +51,8 @@
 
 .color-filter__item {
   display: block;
-  padding: 12px 10px 12px 60px;
-  margin-bottom: 20px;
+  padding: 12px 10px 12px 62px;
+  margin-bottom: 19px;
 
   line-height: 18px;
 
@@ -50,25 +66,31 @@
 
     font-size: 19px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 262px;
+    padding-right: 118px;
+  }
 }
 
 .color-filter__wrap {
   @media (min-width: @tablet-width) {
-    padding-top: 42px;
-    padding-bottom: 25px;
+    padding-top: 45px;
+    padding-bottom: 28px;
     display: flex;
     align-items: flex-start;
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 180px;
-    padding-top: 45px;
+    padding-right: 160px;
 
     margin-bottom: 35px;
   }
 }
 
 .color-filter__list {
+  width: 100%;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
