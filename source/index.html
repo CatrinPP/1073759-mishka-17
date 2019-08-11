@@ -135,27 +135,31 @@
         </a>
       </section>
     </footer>
-    <div class="popup">
-      <form class="popup__form cart-form" action="https://echo.htmlacademy.ru" method="POST">
+    <section class="popup">
+      <div class="popup__overlay">
+      <form class="popup__form  cart-form" action="https://echo.htmlacademy.ru" method="POST">
         <p class="cart-form__title">Добавить в корзину</p>
         <fieldset class="cart-form__size-list">
           <p class="cart-form__text">Выберите размер:</p>
-          <label class="cart-form__item  radio">
-            <input class="radio__control  visually-hidden" type="radio" value="S" name="size" checked>
-            <span class="radio__label">S</span>
-          </label>
-          <label class="cart-form__item  radio">
-            <input class="radio__control  visually-hidden" type="radio" value="M" name="size">
-            <span class="radio__label">M</span>
-          </label>
-          <label class="cart-form__item  radio">
-            <input class="radio__control  visually-hidden" type="radio" value="L" name="size">
-            <span class="radio__label">L</span>
-          </label>
+          <div class="cart-form__size-wrap">
+            <label class="cart-form__item  radio">
+              <input class="radio__control  radio__control--square  visually-hidden" type="radio" value="S" name="size" checked>
+              <span class="radio__label">S</span>
+            </label>
+            <label class="cart-form__item  radio">
+              <input class="radio__control  radio__control--square  visually-hidden" type="radio" value="M" name="size">
+              <span class="radio__label">M</span>
+            </label>
+            <label class="cart-form__item  radio">
+              <input class="radio__control  radio__control--square  visually-hidden" type="radio" value="L" name="size">
+              <span class="radio__label">L</span>
+            </label>
+          </div>
         </fieldset>
         <button class="cart-form__btn  button  button--cart-add" type="submit">Добавить</button>
       </form>
-    </div>
+      </div>
+    </section>
     <script src="js/script.js"></script>
   </body>
 </html>
