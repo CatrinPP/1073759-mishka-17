@@ -1,12 +1,40 @@
 .products-menu {
   @media (min-width: @tablet-width) {
+    position: relative;
+
     display: flex;
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+
+      width: 100%;
+      height: 22px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 32px;
+
+      background-size: cover;
+    }
+  }
 }
 
 .products-menu__item {
+  position: relative;
+
   display: block;
   width: 100%;
   padding: 25px 115px 30px 30px;
@@ -18,19 +46,43 @@
   background-color: @color-vibrant;
 
   @media (min-width: @tablet-width) {
-    padding: 30px 115px 30px 35px;
+    padding: 30px 115px 40px 35px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 30px 305px 30px 35px;
+    padding: 28px 305px 42px 35px;
   }
 
-  &--another {
+  &--toys {
     background-color: @color-vibrant--dark;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    right: 16px;
+
+    width: 60px;
+    height: 65px;
+
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
+
+  &--interior::after {
+    background-image: url("../img/icon-interior.svg");
+  }
+
+  &--toys::after {
+    right: 26px;
+
+    background-image: url("../img/icon-toy.svg");
   }
 }

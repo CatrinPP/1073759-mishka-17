@@ -1,7 +1,7 @@
 .site-menu {
   width: 100%;
   margin: 0;
-  padding-left: 17px;
+  padding: 0;
 
   list-style: none;
 
@@ -9,24 +9,28 @@
     order: 2;
     display: flex;
     justify-content: space-between;
-    width: 310px;
-    padding-left: 0;
-    padding-top: 17px;
+    width: 354px;
+    padding-top: 15px;
     padding-bottom: 17px;
+    padding-left: 50px;
   }
 
   @media (min-width: @desktop-width) {
     order: 0;
-    width: 375px;
-    padding-top: 32px;
+    width: 425px;
+    padding-top: 30px;
     padding-bottom: 32px;
   }
 }
 
 .site-menu__item {
-  padding: 28px;
+  padding: 27px 27px 27px 75px;
 
   text-align: left;
+
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid @lighterGrey;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 0;
