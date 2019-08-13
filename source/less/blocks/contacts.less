@@ -210,11 +210,20 @@
 }
 
 .contacts__value {
+  margin: 0;
+}
+
+.contacts__value--email {
   position: relative;
 
-  margin: 0;
+  &:active .contacts__link,
+  &:active .contacts__link::after {
+    opacity: 0.3;
+  }
+}
 
-  &--email::after {
+.contacts__value--email .contacts__link {
+  &::after {
     content: "";
 
     position: absolute;
@@ -228,16 +237,16 @@
     background-color: @color-vibrant--light;
   }
 
-  &--email:hover a,
-  &--email:focus a {
+  &:hover {
     color: @color-vibrant--darker;
   }
 
-  &--email:active a {
-    opacity: 0.3;
+  &:hover::after {
+    background-color: @color-vibrant--darker;
   }
 
-  &--email:active::after {
+  &:active,
+  &:active::after {
     opacity: 0.3;
   }
 }

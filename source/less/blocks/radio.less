@@ -33,6 +33,10 @@
   }
 }
 
+.radio__control--round:focus ~ .radio__label::before {
+  border-color: @seafoamBlue--light;
+}
+
 .radio__control:not(.radio__control--square):checked ~ .radio__label::after {
   content: "";
   position: absolute;

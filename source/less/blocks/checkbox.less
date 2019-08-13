@@ -30,6 +30,10 @@
   }
 }
 
+.checkbox__control:focus ~ .checkbox__label::before {
+  border-color: @seafoamBlue--light;
+}
+
 .checkbox__control:checked ~ .checkbox__label::after {
   content: "";
   position: absolute;
