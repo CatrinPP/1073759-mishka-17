@@ -8,7 +8,6 @@
   @media (min-width: @tablet-width) {
     order: 1;
     display: flex;
-    justify-content: space-between;
     width: 400px;
   }
 
@@ -18,9 +17,7 @@
 }
 
 .user-menu__item {
-  position: relative;
-
-  padding: 27px 27px 27px 75px;
+  padding: 27px 27px 27px 30px;
 
   text-align: left;
 
@@ -29,9 +26,9 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 30px 50px 30px 82px;
+    padding: 30px;
 
-    text-align: right;
+    // text-align: right;
   }
 
   &--search {
@@ -39,14 +36,25 @@
 
     @media (min-width: @tablet-width) {
       width: 86px;
-      padding-top: 35px;
-      padding-left: 30px;
 
       font-size: 0;
+      line-height: 0;
 
       border-left: 1px solid @lighterGrey;
       border-right: 1px solid @lighterGrey;
     }
+  }
+
+  &--cart {
+    flex-grow: 1;
+  }
+}
+
+.user-menu__icon {
+  margin-right: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 27px;
   }
 }
 

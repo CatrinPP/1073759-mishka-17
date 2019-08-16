@@ -23,11 +23,14 @@
     transform: rotate(180deg);
 
     @media (min-width: @tablet-width) {
+      width: @tablet-width;
       height: 15px;
     }
 
     @media (min-width: @desktop-width) {
       height: 23px;
+      width: @desktop-width - 100px;
+
       background-size: contain;
     }
   }
@@ -37,7 +40,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 78px 48px 95px 48px;
+    padding: 75px 48px 95px 48px;
 
     background-image: url("../img/review@1x.jpg");
     background-size: 350px 457px;
