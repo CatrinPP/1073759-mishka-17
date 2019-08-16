@@ -18,8 +18,7 @@
   @media (min-width: @desktop-width) {
     order: 0;
     width: 425px;
-    padding-top: 30px;
-    padding-bottom: 32px;
+    padding: 0;
   }
 }
 
@@ -34,6 +33,18 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 32px;
+
+    &:first-child {
+      width: 235px;
+      padding-left: 50px;
+
+      border-right: 1px solid @lighterGrey;
+    }
   }
 }
 

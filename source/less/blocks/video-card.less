@@ -1,35 +1,35 @@
 .video-card {
-  display: flex;
-  flex-direction: column;
+  padding-top: 95px;
 
   border: 1px solid @lighterGrey;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 46px;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
-    display: block;
+    display: flex;
     min-height: 455px;
-    padding-bottom: 60px;
-  }
+    padding-bottom: 0;
 
-  &:hover,
-  &:focus {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-  }
+    &:hover .video-card__description,
+    &:focus .video-card__description {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
 
-  &:active {
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    &:active .video-card__description {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 }
 
 .video-card__title {
   position: relative;
 
-  order: 0;
   margin: 0;
-  padding: 24px 26px 24px 90px;
+  padding: 30px 20px 200px 55px;
+  margin-top: -275px;
 
   font-size: 17px;
   line-height: 24px;
@@ -38,8 +38,8 @@
     content: "";
 
     position: absolute;
-    top: 28px;
-    left: 33px;
+    top: 30px;
+    left: 0;
 
     width: 32px;
     height: 32px;
@@ -49,44 +49,23 @@
   }
 
   @media (min-width: @tablet-width) {
-    order: 1;
-    padding: 38px 105px 32px;
+    padding: 38px 65px 32px;
+    margin-top: 0;
 
     font-size: 20px;
-
-    &::before {
-      top: 32px;
-      left: 41px;
-    }
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 95px;
-    padding-right: 55px;
-    padding-bottom: 33px;
+    padding: 55px 55px 33px 0;
 
     &::before {
-      top: 41px;
-      left: auto;
-      right: 255px;
+      top: 0;
     }
   }
 }
 
 .video-card__visual {
   position: relative;
-
-  order: 1;
-
-  @media (min-width: @tablet-width) {
-    order: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    order: 0;
-    float: left;
-    margin-right: 78px;
-  }
 }
 
 .video-card__img {
@@ -131,13 +110,18 @@
 }
 
 .video-card__description {
-  order: 2;
   width: 260px;
   padding: 27px 34px 32px;
 
   @media (min-width: @tablet-width) {
     width: 100%;
     padding: 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 370px;
+    flex-grow: 1;
+    padding: 40px 60px 60px 80px;
   }
 }
 
@@ -162,13 +146,11 @@
 }
 
 .video-card__btn {
-  order: 3;
   width: 100%;
 
   line-height: 17px;
 
   @media (min-width: @desktop-width) {
-    display: inline-block;
     width: 230px;
   }
 }
