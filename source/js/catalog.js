@@ -17,13 +17,21 @@ navToggle.addEventListener('click', function() {
 
 //Popup
 var popup = document.querySelector(".popup__form");
-var popupLink = document.querySelector(".week-product__btn");
+var cartLinks = document.querySelectorAll(".card__btn");
 var popupWindow = document.querySelector(".popup");
+var index;
+var link;
 
-popupLink.addEventListener("click", function(evt){
-  evt.preventDefault();
-  popupWindow.classList.add("popup__show");
-});
+for (index = 0; index < cartLinks.length; index++) {
+    link = cartLinks[index];
+    link.addEventListener('click', clickHandler);
+}
+
+function clickHandler(event) {
+    event.preventDefault();
+    popupWindow.classList.add("popup__show");
+}
+
 
 window.addEventListener("keydown", function(evt){
   if (evt.keyCode === 27) {
