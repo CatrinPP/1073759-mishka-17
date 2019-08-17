@@ -1,24 +1,25 @@
 .video-card {
-  padding-top: 95px;
+  width: 100%;
 
   border: 1px solid @lighterGrey;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 46px;
     padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
     min-height: 455px;
-    padding-bottom: 0;
+    padding: 40px 56px 40px 77px;
 
-    &:hover .video-card__description,
-    &:focus .video-card__description {
+    &:hover,
+    &:focus {
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
     }
 
-    &:active .video-card__description {
+    &:active {
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
     }
   }
@@ -28,8 +29,7 @@
   position: relative;
 
   margin: 0;
-  padding: 30px 20px 200px 55px;
-  margin-top: -275px;
+  padding: 24px 24px 24px 88px;
 
   font-size: 17px;
   line-height: 24px;
@@ -39,7 +39,7 @@
 
     position: absolute;
     top: 30px;
-    left: 0;
+    left: 32px;
 
     width: 32px;
     height: 32px;
@@ -49,23 +49,41 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 38px 65px 32px;
-    margin-top: 0;
+    order: 1;
+    padding: 38px 106px 32px;
 
     font-size: 20px;
+
+    &::before {
+      top: 32px;
+      left: 40px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 55px 55px 33px 0;
+    padding: 55px 0 33px;
 
     &::before {
       top: 0;
+      left: 0;
     }
   }
 }
 
 .video-card__visual {
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    order: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+
+    margin-top: -227px;
+  }
 }
 
 .video-card__img {
@@ -114,17 +132,16 @@
 
 .video-card__description {
   width: 260px;
-  padding: 27px 34px 32px;
+  padding: 27px 34px 30px;
 
   @media (min-width: @tablet-width) {
+    order: 2;
     width: 100%;
     padding: 0 40px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 370px;
-    flex-grow: 1;
-    padding: 40px 60px 60px 80px;
+    padding: 0;
   }
 }
 
