@@ -1,5 +1,24 @@
 .input {
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    align-items: baseline;
+    width: 500px;
+
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+  }
 }
 
 .input__label {
