@@ -1,19 +1,38 @@
 .page-header {
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+
+  background-image: linear-gradient(@color-main 30%, @color-main--dark 30%);
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
     background-image: linear-gradient(@color-main 27%, @color-main--dark 27%);
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+
+      width: 100%;
+      height: 24px;
+
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
     background-image: linear-gradient(@color-main 24%, @color-main--dark 24%);
+
+    &::after {
+      height: 34px;
+    }
   }
 
   &--index {
+    background-image: linear-gradient(@color-main 10.5%, #f9f9f9 10.5%);
+
     @media (min-width: @tablet-width) {
       background-image: url("../img/hero-tablet@1x.jpg");
       background-repeat: no-repeat;
@@ -21,27 +40,17 @@
     }
 
     @media (min-width: @desktop-width) {
-      background-image: url("../img/hero-desktop@1x.jpg");
+      background-image: url("../img/hero-desktop@1x.jpg"),
+        linear-gradient(@color-main 10.5%, #f9f9f9 10.5%);
     }
   }
 }
 
 .page-header__slogan {
   margin: 0;
-  padding: 70px 38px 122px;
 
   @media (max-width: @mobile-width-only) {
     border-top: 1px solid @lighterGrey;
-  }
-
-  @media (min-width: @tablet-width) {
-    padding: 96px 50px 372px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
-    padding-bottom: 360px;
   }
 }
 
@@ -55,13 +64,17 @@
   @media (min-width: @tablet-width) {
     background-image: none;
   }
+
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .page-header__title {
   margin: 0;
   padding: 72px 30px 76px;
-
-  background-color: @color-main--dark;
 
   @media (max-width: @mobile-width-only) {
     border-top: 1px solid @lighterGrey;
@@ -70,11 +83,6 @@
   @media (min-width: @tablet-width) {
     min-height: 177px;
     padding: 38px 50px 38px;
-
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
-    background-position: 0% 100%;
-    background-size: contain;
   }
 
   @media (min-width: @desktop-width) {

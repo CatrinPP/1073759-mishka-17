@@ -25,20 +25,23 @@
     height: 6px;
 
     background-image: url("/img/bg-zigzag-line.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-size: cover;
     transform: rotate(180deg);
 
-    @media (min-width: @tablet-width) {
-      width: 100%;
+
+    @media (min-width: 321px) {
       height: 15px;
     }
 
-    @media (min-width: @desktop-width) {
+    @media (min-width: @tablet-width + 1px) {
       left: 50px;
 
       height: 20px;
-      width: @desktop-width - 100px;
+    }
+
+    @media (min-width: @desktop-width + 1px) {
+      height: 31px;
     }
   }
 }
