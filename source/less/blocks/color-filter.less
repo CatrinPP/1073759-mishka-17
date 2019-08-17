@@ -51,24 +51,21 @@
 
 .color-filter__item {
   display: block;
-  padding: 12px 10px 12px 62px;
-  margin-bottom: 19px;
+  padding: 12px 10px 31px 62px;
 
   line-height: 18px;
 
   &:last-child {
-    margin-bottom: 0;
+    @media (max-width: @mobile-width-only) {
+      padding-bottom: 12px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     width: 260px;
-    padding: 20px 20px 20px 120px;
+    padding: 20px 20px 38px 120px;
 
     font-size: 19px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-right: 118px;
   }
 }
 
