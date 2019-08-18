@@ -26,22 +26,16 @@
 
     background-image: url("/img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-size: cover;
+    background-size: contain;
     transform: rotate(180deg);
 
 
-    @media (min-width: 321px) {
-      height: 15px;
+    @media (min-width: @tablet-width) {
+      height: 16px;
     }
 
-    @media (min-width: @tablet-width + 1px) {
-      left: 50px;
-
-      height: 20px;
-    }
-
-    @media (min-width: @desktop-width + 1px) {
-      height: 31px;
+    @media (min-width: @desktop-width) {
+      height: 21px;
     }
   }
 }
