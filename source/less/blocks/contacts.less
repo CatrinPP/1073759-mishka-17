@@ -16,7 +16,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 38px;
-    padding: 65px 50px 65px 220px;
+    padding: 70px 50px 65px 220px;
   }
 }
 
@@ -40,7 +40,7 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 72px;
-    padding-bottom: 48px;
+    padding-bottom: 47px;
     margin-bottom: 0;
 
     font-size: 53px;
@@ -53,7 +53,7 @@
 
       position: absolute;
       top: 10px;
-      right: 0;
+      right: 4px;
 
       width: 50px;
       height: 100px;
@@ -78,6 +78,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 3px;
 
     font-size: 17px;
   }
@@ -90,19 +91,17 @@
 .contacts__details {
   order: 0;
   margin-bottom: 38px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 30px;
+  padding-left: 28px;
   padding-right: 30px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
-    padding: 36px 50px;
+    padding: 36px 46px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 78px;
   }
 }
 
@@ -113,7 +112,7 @@
   margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: @desktop-width) {
@@ -170,6 +169,7 @@
 
   @media (min-width: @desktop-width) {
     display: inline-block;
+    margin-left: 5px;
   }
 }
 
@@ -188,7 +188,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-right: 54px;
+    margin-right: 53px;
     margin-bottom: 10px;
 
     align-self: flex-start;
@@ -202,7 +202,11 @@
 
 .contacts__label {
   margin: 0;
-  width: 76px;
+  width: 80px;
+
+  @media (min-width: @tablet-width) {
+    width: 77px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 80px;
