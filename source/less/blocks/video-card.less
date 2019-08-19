@@ -1,55 +1,88 @@
 .video-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 60px;
+  width: 100%;
+
+  border: 1px solid @lighterGrey;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 45px;
-    margin-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 46px;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
-    display: block;
-    padding-bottom: 60px;
-    margin-bottom: 105px;
+    min-height: 455px;
+    padding: 40px 56px 40px 77px;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 }
 
 .video-card__title {
-  order: 0;
+  position: relative;
+
   margin: 0;
-  padding: 24px 26px 24px 90px;
+  padding: 24px 24px 24px 88px;
 
   font-size: 17px;
   line-height: 24px;
 
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 30px;
+    left: 32px;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: @tablet-width) {
     order: 1;
-    padding: 35px 107px;
+    padding: 38px 106px 32px;
 
     font-size: 20px;
+
+    &::before {
+      top: 32px;
+      left: 40px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 97px;
-    padding-right: 55px;
-    padding-bottom: 35px;
+    padding: 55px 0 33px;
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
   }
 }
 
 .video-card__visual {
   position: relative;
 
-  order: 1;
-
   @media (min-width: @tablet-width) {
     order: 0;
   }
 
   @media (min-width: @desktop-width) {
-    order: 0;
-    float: left;
-    margin-right: 78px;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+
+    margin-top: -227px;
   }
 }
 
@@ -76,16 +109,39 @@
   width: 101px;
   height: 77px;
   margin: -36px -50px;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+    transition: 0.3s;
+  }
 }
 
 .video-card__description {
-  order: 2;
   width: 260px;
-  padding: 27px 34px;
+  padding: 27px 34px 30px;
 
   @media (min-width: @tablet-width) {
+    order: 2;
     width: 100%;
     padding: 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }
 
@@ -105,18 +161,16 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 46px;
   }
 }
 
 .video-card__btn {
-  order: 3;
   width: 100%;
 
   line-height: 17px;
 
   @media (min-width: @desktop-width) {
-    display: inline-block;
     width: 230px;
   }
 }

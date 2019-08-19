@@ -1,5 +1,11 @@
-* {
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -53,4 +59,8 @@ input[type="radio"].visually-hidden {
   &::-moz-placeholder {
     color: @color-secondary--fade;
   }
+}
+
+.solution-ie {
+  pointer-events: none;
 }
