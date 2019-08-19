@@ -5,13 +5,18 @@
     <title>Интернет-магазин "Мишка" - Каталог</title>
     <meta name="viewport" content="width=device-width,initial-scake=1">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="page-header">
       <nav class="page-header__main-nav  main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__logo-wrap">
           <a class="main-nav__logo  logo" href="index.html">
-            <img class="logo__img  logo__img--decorated" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__img  logo__img--decorated" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Переключение видимости меню</span></button>
         </div>
@@ -45,7 +50,11 @@
       <section class="shop  wrapper">
         <article class="shop__card  card">
           <a class="card__link" href="catalog/hare.html">
-            <img class="card__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Вязаный зайчик">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаный зайчик">
+            </picture>
           </a>
           <div class="card__description">
             <div class="card__label">
@@ -62,7 +71,11 @@
         </article>
         <article class="shop__card  card">
           <a class="card__link" href="catalog/basket.html">
-            <img class="card__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Вязаная корзина с бельем">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаная корзина с бельем">
+            </picture>
           </a>
           <div class="card__description">
             <div class="card__label">
@@ -79,7 +92,11 @@
         </article>
         <article class="shop__card  card">
           <a class="card__link" href="catalog/toybasket.html">
-            <img class="card__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Вязаная корзина с мягкими игрушками">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаная корзина с мягкими игрушками">
+            </picture>
           </a>
           <div class="card__description">
             <div class="card__label">
@@ -99,7 +116,11 @@
         <article class="videos__card  video-card">
           <h2 class="video-card__title">Процесс производства</h2>
           <div class="video-card__visual">
-            <img class="video-card__img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Зелено-серая вязаная корзина">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video-card__img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Зелено-серая вязаная корзина">
+            </picture>
             <button class="video-card__icon" type="button"><span class="visually-hidden">Включить видео</span></button>
           </div>
           <div class="video-card__description">
