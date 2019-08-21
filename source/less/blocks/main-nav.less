@@ -110,7 +110,24 @@
 .main-nav--closed .site-menu,
 .main-nav--closed .user-menu {
   @media (max-width: @mobile-width-only) {
-    display: none;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.main-nav--opened {
+  @media (max-width: @mobile-width-only) {
+    .site-menu,
+    .user-menu {
+      position: absolute;
+      z-index: 10;
+
+      background-color: @color-main;
+    }
+
+    .user-menu {
+      top: 235px;
+    }
   }
 }
 
@@ -145,5 +162,6 @@
 
 .main-nav--nojs .site-menu,
 .main-nav--nojs .user-menu {
-  display: flex;
+  position: relative;
+  z-index: 10;
 }
