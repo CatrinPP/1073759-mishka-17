@@ -5,13 +5,18 @@
     <title>Интернет-магазин "Мишка" - Каталог</title>
     <meta name="viewport" content="width=device-width,initial-scake=1">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="page-header">
       <nav class="page-header__main-nav  main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__logo-wrap">
           <a class="main-nav__logo  logo" href="index.html">
-            <img class="logo__img  logo__img--decorated" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__img  logo__img--decorated" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина Мишка">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Переключение видимости меню</span></button>
         </div>
@@ -45,7 +50,11 @@
       <section class="shop  wrapper">
         <article class="shop__card  card">
           <a class="card__link" href="catalog/hare.html">
-            <img class="card__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Вязаный зайчик">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаный зайчик">
+            </picture>
           </a>
           <div class="card__description">
             <div class="card__label">
@@ -62,7 +71,11 @@
         </article>
         <article class="shop__card  card">
           <a class="card__link" href="catalog/basket.html">
-            <img class="card__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Вязаная корзина с бельем">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаная корзина с бельем">
+            </picture>
           </a>
           <div class="card__description">
             <div class="card__label">
@@ -79,7 +92,11 @@
         </article>
         <article class="shop__card  card">
           <a class="card__link" href="catalog/toybasket.html">
-            <img class="card__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Вязаная корзина с мягкими игрушками">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаная корзина с мягкими игрушками">
+            </picture>
           </a>
           <div class="card__description">
             <div class="card__label">
@@ -99,7 +116,11 @@
         <article class="videos__card  video-card">
           <h2 class="video-card__title">Процесс производства</h2>
           <div class="video-card__visual">
-            <img class="video-card__img" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Зелено-серая вязаная корзина">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video-card__img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Зелено-серая вязаная корзина">
+            </picture>
             <button class="video-card__icon" type="button"><span class="visually-hidden">Включить видео</span></button>
           </div>
           <div class="video-card__description">
@@ -125,7 +146,7 @@
           </a>
           <a class="social__link" href="#">
             <svg class="social__logo  solution-ie" xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="52.253 53.771 23.494 20.168"><path fill="#231F20" d="M75.706 57.855c-.227-.366-.909-.277-1.407-.371h-1.112c.142-.353.343-.646.52-.963.056-.438.254-.734.223-1.26.129-.167.176-.417.296-.593.104-.144.242-.477.074-.667-.051-.221-.295-.249-.593-.222a.515.515 0 0 0-.222.148c-.448.433-.778 1.014-1.261 1.408-.009.008-.062 0-.074 0-.087.005-.033.046-.075.074-.146.098-.257.152-.369.223-.284.176-.547.445-.891.519-.529-.211-1.156-.326-1.852-.37-1.157.102-2.303.215-3.038.741-.911.35-1.477 1.042-2.149 1.63-.049.32-.342.398-.37.741-.005.045-.012.088-.073.074.043.241-.051.345-.074.519-.001.133.199.431 0 .52-.822-.12-1.485-.63-2.149-.964-.718-.36-1.468-.604-2.074-1.111-.716-.322-1.26-.816-1.778-1.334-.208-.312-.542-.496-.667-.89-.379-.164-.175-.912-.741-.889-.315-.043-.345.199-.444.37-.07.227-.361.232-.371.519-.004.046-.011.088-.074.075-.17 1.089-.527 1.992-.519 3.26.129.415.35.738.593 1.038-.418.051-.716.222-.89.519-.06 1.073.378 1.647.742 2.297.134.384.352.685.593.963.017.229.206.288.296.445.019.105.123.125.149.223-.04.105.289.18.073.221-.413.131-1.016.07-1.259.371-.109.279-.109.833 0 1.111.034.237.282.262.296.519.499.417 1.082.747 1.631 1.112.574.166 1.211.271 1.852.37-.102.343-.338.551-.593.741-.78.381-1.849.474-2.742.74-.555.038-.956.23-1.556.223-.333.127-.854.075-1.112.223-.122.068-.102.096-.222.221-.134.412.111.74.444.89-.005.253.219.276.371.371.089.183.254.29.445.37.544.468 1.268.759 1.927 1.112.83.183 1.648.376 2.52.519.896.116 1.901.124 2.816.222h.963c.511.132 1.23.054 1.853.074.095-.102.322-.073.519-.074.522-.269 1.196-.385 1.631-.74.574-.241.989-.642 1.557-.89.866-.765 1.937-1.324 2.519-2.37.205-.189.351-.438.445-.74.265-.156.385-.454.593-.667.404-.41.706-.924 1.037-1.4.319-.496.576-1.054.89-1.556-.01-.405.306-.484.296-.89.193-.226.177-.662.371-.88-.033-.255.029-.415.074-.594.047-1.281-.047-2.422-.297-3.407.588-.155 1.181-.302 1.631-.593.52-.206.993-.603.808-1.281zm-3.408 4.076c-.153.859-.615 1.41-1.038 2.001.059.379-.104.538-.073.889a4.303 4.303 0 0 0-.371 1.037c-.203.267-.332.606-.519.89-.366.548-.777 1.051-1.186 1.557-.378.56-.912.965-1.334 1.481-.42.493-.942.885-1.407 1.334-.474.17-.89.396-1.26.667a5.06 5.06 0 0 0-.667.296c-.177.146-.499.145-.668.29-1.086.147-2.3.17-3.555.148-1.031-.105-2.115-.159-3.039-.371-.922-.189-1.511-.712-2.297-1.037.153-.242.634-.154.963-.222.031-.166.394-.003.444-.149.257.06.285-.109.52-.07.563-.201 1.23-.302 1.705-.593.282-.138.406-.434.667-.593.033-.189.104-.341.222-.444.047-.275.201-.441.148-.815.111-.21.299-.343.296-.667-.074-.147-.128-.316-.296-.371-.026-.196-.377-.067-.444-.222-.255.032-.416-.029-.593-.075-.154-.043-.487.092-.519-.073-.842-.023-1.3-.43-1.853-.74.431-.262 1.032-.353 1.333-.742.516-.076 1.058-.129 1.112-.666 0-.717-.771-.661-1.333-.815-.773-.66-1.194-1.672-1.779-2.52.238-.157.564-.226.741-.444.454.058.54-.251.667-.52.019-.488-.333-.605-.593-.815a3.49 3.49 0 0 1-.667-.74c-.003-.818-.021-1.652.074-2.372.063-.014.07.029.074.074.227.441.559.775.815 1.186.532.357.925.853 1.556 1.112.452.413 1.108.621 1.557 1.038.601.263 1.158.57 1.704.889.669.194 1.056.673 2.001.593.198-.098.394-.199.593-.297.258-.456-.059-1.079.147-1.63.255-.659.797-1.031 1.26-1.481.29-.155.555-.335.815-.519.347-.098.675-.216.964-.37a6.223 6.223 0 0 0 1.037-.148h1.26c.244.052.475.119.74.148.209.137.38.313.666.371.789.693 1.271 1.696 1.409 3.039-.122.484.053.873.001 1.481zm.296-5.632c-.129.34-.23.707-.593.815-.017-.105-.122-.125-.147-.222-.012-.209.209-.186.296-.296.162-.085.245-.248.444-.297-.007-.09.108-.046 0 0zm-5.484 3.038c.163.135.284.31.519.371.101.221.314.327.594.37.047-.15.346-.049.37-.222.174-.023.166-.229.296-.297-.018-.55-.129-1.006-.37-1.333-.758-.423-1.676.039-1.409 1.111z"/></svg>
-            <span class="visually-hidden" tabindex="-1">Магазин Мишка в Твиттере</span>
+            <span class="visually-hidden">Магазин Мишка в Твиттере</span>
           </a>
         </section>
         <section class="page-footer__copyright  copyright">
