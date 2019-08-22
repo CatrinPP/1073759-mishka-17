@@ -50,7 +50,7 @@
     border-color: @color-vibrant--light;
     outline: 0;
 
-    ~ .input__icon path {
+    ~ .input__icon {
       fill: @color-vibrant--light;
     }
   }
@@ -78,6 +78,11 @@
   .input--icon & {
     padding-right: 45px;
 
+    &:hover,
+    &:focus {
+      fill: @color-vibrant--light;
+    }
+
     @media (min-width: @tablet-width) {
       padding-right: 80px;
     }
@@ -92,6 +97,8 @@
 
   width: 32px;
   height: 32px;
+
+  fill: #cccccc;
 
   @media (min-width: @tablet-width) {
     right: 20px;
