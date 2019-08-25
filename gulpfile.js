@@ -15,6 +15,8 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
+var htmlmin = require("gulp-htmlmin");
+var jsmin = require("gulp-uglify");
 
 gulp.task("clean", function () {
   return del("build");
@@ -79,6 +81,21 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("minify-html", function () {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({
+    collapseWhitespace: true,
+    removeComments: true
+  }))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("minify-js", function() {
+  return gulp.src("source/js/**/*.js")
+    .pipe(jsmin())
+    .pipe(gulp.dest('build/js'))
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -102,6 +119,8 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+  "minify-html",
+  "minify-js",
   "sprite"
 ));
 
