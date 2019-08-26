@@ -61,7 +61,7 @@ gulp.task("sprite", function () {
       },
       parserOptions: {xmlMode: true}
     }))
-    .pipe(replace('&gt;', '>'))
+    .pipe(replace("&gt;", ">"))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 })
@@ -93,7 +93,7 @@ gulp.task("minify-html", function () {
 gulp.task("minify-js", function() {
   return gulp.src("source/js/**/*.js")
     .pipe(jsmin())
-    .pipe(gulp.dest('build/js'))
+    .pipe(gulp.dest("build/js"))
 });
 
 gulp.task("server", function () {
